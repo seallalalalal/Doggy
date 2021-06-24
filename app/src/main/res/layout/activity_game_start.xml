@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameStart"
+    android:background="@drawable/start">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_gravity="left"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="left"
+                                android:src="@drawable/bone" />
+
+                            <TextView
+                                android:id="@+id/text_view_point"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:text="point"
+                                android:textSize="50dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="left"
+                                android:src="@drawable/timer" />
+
+                            <TextView
+                                android:id="@+id/text_view_timer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:gravity="top"
+                                android:text="timer"
+                                android:textSize="50dp" />
+
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingLeft="0dp"
+                android:paddingTop="100dp"
+                android:paddingRight="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.28">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:shrinkColumns="0,1,2"
+                    android:stretchColumns="0,1,2">
+
+                    <TableRow>
+
+                        <ImageView
+                            android:id="@+id/house0"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="left"
+                            android:contentDescription="TODO"
+                            android:src="@drawable/house"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/house1"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/house"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/house2"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="right"
+                            android:src="@drawable/house"
+                            android:visibility="visible" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:id="@+id/imageview00"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview01"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview02"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:id="@+id/imageview10"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview11"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview12"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <ImageView
+                            android:id="@+id/imageview20"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview21"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview22"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageview30"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview31"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview32"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageview40"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="left"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview41"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageview42"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/dog1"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/searchImageButton1"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:onClick="onclickShoot1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/shoot"
+                            app:layout_constraintHeight_percent="0.1"
+                            app:layout_constraintWidth_percent="0.1"
+                            tools:ignore="UsingOnClickInXml" />
+
+                        <ImageButton
+                            android:id="@+id/searchImageButton2"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:onClick="onclickShoot2"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/shoot"
+                            tools:ignore="UsingOnClickInXml" />
+
+                        <ImageButton
+                            android:id="@+id/searchImageButton3"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:gravity="end"
+                            android:onClick="onclickShoot3"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/shoot"
+                            tools:ignore="UsingOnClickInXml" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@id/text_view_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ready"
+            android:layout_gravity="center">
+
+
+        </TextView>
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
